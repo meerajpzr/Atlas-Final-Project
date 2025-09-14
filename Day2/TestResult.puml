@@ -1,0 +1,10 @@
+@startuml
+class TestResult {
+    - resultId : String
+    - studentId : String
+    - assignmentId : String
+    - score : int
+    - feedback : String
+    + getDetails()
+}
+@enduml

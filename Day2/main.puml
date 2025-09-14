@@ -1,0 +1,12 @@
+@startuml
+!include Student.puml
+!include Assignment.puml
+!include EvaluationEngine.puml
+!include TestResult.puml
+
+' Relationships
+Student "1" --> "*" Assignment : submits
+EvaluationEngine --> Assignment : evaluates
+EvaluationEngine --> TestResult : uses
+
+@enduml

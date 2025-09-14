@@ -1,0 +1,10 @@
+@startuml
+class Student {
+    - studentId : String
+    - name : String
+    - email : String
+    - batch : String
+    + uploadAssignment(assignment : Assignment)
+    + viewResults(result : TestResult)
+}
+@enduml

@@ -1,0 +1,7 @@
+@startuml
+class EvaluationEngine {
+    - scoreMap : HashMap<String, Integer>
+    + runTestCases(student : Student, assignment : Assignment) : TestResult
+    + getScore(student : Student) : int
+}
+@enduml

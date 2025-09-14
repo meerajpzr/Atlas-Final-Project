@@ -1,0 +1,16 @@
+@startuml
+' Relationship diagram for E-Learning Platform
+
+' Classes (you can keep these or render only relations)
+class Student
+class Assignment
+class EvaluationEngine
+class TestResult
+
+' Relationships
+Student "1" --> "*" Assignment : uploads
+EvaluationEngine --> Assignment : evaluates
+EvaluationEngine --> TestResult : generates
+Student --> TestResult : views
+
+@enduml

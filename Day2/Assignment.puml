@@ -1,0 +1,9 @@
+@startuml
+class Assignment {
+    - assignmentId : String
+    - studentId : String
+    - filePath : String
+    - submissionDate : Date
+    + validateFormat()
+}
+@enduml
